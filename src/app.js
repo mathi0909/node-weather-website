@@ -51,7 +51,7 @@ app.get("/weather",(req,res)=>{
     console.log(!req.query.address)
     if(!req.query.address){
 
-        let rst= { errorMsg:"Please provide the address to forecast"}
+        let rst= { errorMsg:"Please provide the address to forecast."}
         return res.send(rst)
     }
 
