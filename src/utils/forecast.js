@@ -12,7 +12,8 @@ request({url: url, json:true},(error,response)=>{
         callback('Invalid address coordinates')
     }else{
         callback(undefined,response.body.current.weather_descriptions[0]+ ' and the current temp is '+
-             response.body.current.temperature+' it feels like '+response.body.current.feelslike)
+             response.body.current.temperature+' it feels like '+response.body.current.feelslike + ", The current humidity is "+
+             response.body.current.humidity)
     }
     
  
